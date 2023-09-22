@@ -59,8 +59,15 @@ Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk men
 Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
 
 ### Jawaban Nomor 6
+`JDRNJA`
 
 ### Screenshot Pengerjaan Nomor 6
+- Langkah pertama, kita analisis soalnya terlebih dahulu, terdapat abjad kapital "S" "U" "B" "S" "T" "I" "T" "U" "S" "I", ini menandakan bahwa kita akan melakukan operasi substitusi. Hal yang perlu diperhatikan lagi adalah a1 e5 u21, jika dianalisis a merupakan abjad pertama, e merupakan abjad kelima, dan u merupakan abjad ke-21.
+- Langkah kedua kita cari time "7812", disitu terlihat source `104.18.13.101`
+  ![Screenshot (73)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/12c0b4e0-3434-4611-a777-2cbaea79fe92)
+- Disini, kita sudah mendapatkan source addres yaitu `104.18.13.101` jika dikaitkan dengan substitusi kami beranggapan bahwa angka source addres tersebut akan menghasilkan suatu kata seperti 10 4 18 13 10 1 yang berarti J D R N J A
+- 
+![Screenshot (74)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/73899346-f7fa-4a87-9f9f-2a80eec047f1)
 
 ## Soal Nomor 7
 Berapa jumlah packet yang menuju IP 184.87.193.88?

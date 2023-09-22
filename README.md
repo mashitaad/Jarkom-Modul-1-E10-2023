@@ -81,8 +81,6 @@ Untuk melakukan decode, masukkan command seperti berikut kedalam bash linux : `e
 - Untuk menemukan IP yang merupakan public IP dapat diseleksi masing-masing ip yang tercapture pada file. IP yang merupakan public IP adalah `74.53.140.153` karena `74.53.140.153` tidak termasuk dalam range IP private.
 ![4](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no5/Screenshot%202023-09-18%20213433.png?raw=true)
 
- 
-
 ## Soal Nomor 6
 Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
 
@@ -90,10 +88,10 @@ Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggema
 `JDRNJA`
 
 ### Screenshot Pengerjaan Nomor 6
-- Langkah pertama, kita analisis soalnya terlebih dahulu, terdapat abjad kapital "S" "U" "B" "S" "T" "I" "T" "U" "S" "I", ini menandakan bahwa kita akan melakukan operasi substitusi. Hal yang perlu diperhatikan lagi adalah a1 e5 u21, jika dianalisis a merupakan abjad pertama, e merupakan abjad kelima, dan u merupakan abjad ke-21.
-- Langkah kedua kita cari time "7812", disitu terlihat source `104.18.13.101`
+- Langkah pertama dalam proses ini adalah melakukan analisis awal pada soal. Perhatikan bahwa ada penggunaan huruf besar "S," "U," "B," "S," "T," "I," "T," "U," "S," "I," yang mengindikasikan bahwa kami akan melakukan operasi penggantian huruf. Penting untuk dicatat bahwa kita memiliki petunjuk a1, e5, dan u21. Dalam konteks ini, "a" mewakili huruf pertama, "e" adalah huruf kelima, dan "u" adalah huruf ke-21. Semua ini merupakan petunjuk penting dalam mengurai soal ini.
+- Langkah kedua, kami akan mencari paket dengan urutan "7812". Dalam paket tersebut, kami dapat mengidentifikasi alamat IP sumber, yaitu 104.18.13.101. Gambar berikut ini memperlihatkan detail paket tersebut:
   ![Screenshot (73)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/12c0b4e0-3434-4611-a777-2cbaea79fe92)
-- Disini, kita sudah mendapatkan source addres yaitu `104.18.13.101` jika dikaitkan dengan substitusi kami beranggapan bahwa angka source addres tersebut akan menghasilkan suatu kata seperti 10 4 18 13 10 1 yang berarti J D R N J A
+- Dari informasi yang telah kami peroleh, alamat IP sumber adalah 104.18.13.101. Jika kita menghubungkan hal ini dengan operasi substitusi yang kami sebutkan sebelumnya, maka angka-angka dalam alamat sumber tersebut akan menghasilkan kata berikut: 10 4 18 13 10 1, yang dapat diartikan sebagai J D R N J A (10 adalah urutan untuk huruf J, 4 adalah urutan untuk huruf D, 18 adalah urutan untuk huruf R, 13 adalah urutan untuk huruf N, 1 adalah urutan untuk huruf A).
   
 ![Screenshot (74)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/73899346-f7fa-4a87-9f9f-2a80eec047f1)
 
@@ -117,7 +115,6 @@ Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yan
 - ||: Operator || digunakan untuk menghubungkan dua kondisi dengan operator "atau" (OR).
 - udp.dstport == 80: Bagian kedua dari ekspresi ini mengacu pada protokol UDP dan nomor port tujuan yang sama dengan 80.
 
-
 ### Screenshot Pengumpulan Nomor 8
 ![image 1](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/3b49729d-ca63-49e4-9605-4c0b8e0d1458)
 
@@ -126,9 +123,9 @@ Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari 
 
 ### Jawaban Nomor 9
 `ip.src == 10.51.40.1 && ip.dst != 10.39.55.34`
-- ip.src == 10.51.40.1: Bagian pertama dari ekspresi ini mengacu pada alamat IP sumber (source IP address). Ekspresi ini menyaring paket-paket yang dikirimkan dari alamat IP ini.
-- ip.dst != 10.39.55.34: Bagian kedua dari ekspresi ini mengacu pada alamat IP tujuan (destination IP address). Namun, dalam hal ini, operator != digunakan, yang berarti "tidak sama dengan." Artinya, Anda akan mempertimbangkan paket-paket yang tidak memiliki alamat IP tujuan 10.39.55.34.
-
+Ekspresi `ip.src == 10.51.40.1 && ip.dst != 10.39.55.34` dapat diuraikan sebagai berikut:
+- `ip.src == 10.51.40.1`: Bagian pertama dari ekspresi ini merujuk pada alamat IP sumber (source IP address). Ini berarti ekspresi ini akan mengidentifikasi paket-paket yang berasal dari alamat IP 10.51.40.1.
+- `ip.dst != 10.39.55.34`: Bagian kedua dari ekspresi ini merujuk pada alamat IP tujuan (destination IP address). Namun, dalam konteks ini, operator != digunakan, yang berarti "tidak sama dengan." Dengan kata lain, ekspresi ini akan memilih paket-paket yang memiliki alamat IP tujuan yang bukan 10.39.55.34. Jadi, ini akan mengkecualikan paket-paket yang menuju ke alamat tersebut dari seleksi.
 
 ### Screenshot Pengumpulan Nomor 9
 ![image 1](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/3b49729d-ca63-49e4-9605-4c0b8e0d1458)
@@ -140,16 +137,16 @@ Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 `dhafin:kesayangannyak0k0`
 
 ### Screenshot Pengerjaan Nomor 10
-- Langkah awal kami dalam proses penyaringan adalah mencari `telnet` di display filter, lalu akan muncul seperti berikut:
-  ![Screenshot (69)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/0a04b314-ab97-41da-9c31-1308ba59a983)
+- Saat ini, langkah awal kami dalam proses penyaringan adalah mencari kata kunci telnet pada filter tampilan (display filter), yang akan menghasilkan tampilan seperti yang ditunjukkan pada gambar berikut:
+  ![Screenshot (69)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/0a04b314-ab97-41da-9c31-1308ba59a983)i 
 
-- Lalu kami lakukan sortir disetiap bloknya satu persatu untuk melihat username dan passwordnya, jadi kami fokus di bagian dropdown `telnet` ini 
+- Kemudian, kami melakukan penyortiran pada setiap paket satu per satu untuk mengidentifikasi username dan passwordnya. Kami fokus pada bagian dropdown yang berkaitan dengan telnet, seperti yang terlihat dalam gambar berikut:
   ![Screenshot (69)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/9ca28711-7a8a-4df2-99ec-342da610d088)
 
-- Lalu kami menemukan username dan passwordnya seperti dibawah ini:
+- Selanjutnya, kami berhasil menemukan username dan password yang relevan, seperti yang terlihat di bawah ini:
   ![Screenshot (67)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/0abf25a4-b4a9-4775-81f4-164a570b8a8f)
 
 ![image 221](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/55c81b73-d622-4fe9-8219-47b99ebc2018)
 
 ## Kendala
-- Kami mengalami kesulitan di nomor 6 ketika praktikum berlangsung, tetapi kami dapat menyelesaikannya saat sesi revisi
+- Pada saat praktikum berlangsung, kami menghadapi kesulitan dalam menyelesaikan nomor 6. Namun, kami berhasil menyelesaikannya dengan sukses saat sesi revisi berlangsung.

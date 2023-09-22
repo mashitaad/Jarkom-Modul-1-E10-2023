@@ -66,7 +66,7 @@ Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggema
 - Langkah kedua kita cari time "7812", disitu terlihat source `104.18.13.101`
   ![Screenshot (73)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/12c0b4e0-3434-4611-a777-2cbaea79fe92)
 - Disini, kita sudah mendapatkan source addres yaitu `104.18.13.101` jika dikaitkan dengan substitusi kami beranggapan bahwa angka source addres tersebut akan menghasilkan suatu kata seperti 10 4 18 13 10 1 yang berarti J D R N J A
-- 
+  
 ![Screenshot (74)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/73899346-f7fa-4a87-9f9f-2a80eec047f1)
 
 ## Soal Nomor 7
@@ -121,4 +121,4 @@ Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 ![image 221](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/55c81b73-d622-4fe9-8219-47b99ebc2018)
 
 ## Kendala
-Kami kesulitan dalam mengerjakan nomor 6
+- Kami mengalami kesulitan di nomor 6 ketika praktikum berlangsung, tetapi kami dapat menyelesaikannya saat sesi revisi

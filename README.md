@@ -91,10 +91,10 @@ Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggema
 - Langkah pertama dalam proses ini adalah melakukan analisis awal pada soal. Perhatikan bahwa ada penggunaan huruf besar "S," "U," "B," "S," "T," "I," "T," "U," "S," "I," yang mengindikasikan bahwa kami akan melakukan operasi penggantian huruf. Penting untuk dicatat bahwa kita memiliki petunjuk a1, e5, dan u21. Dalam konteks ini, "a" mewakili huruf pertama, "e" adalah huruf kelima, dan "u" adalah huruf ke-21. Semua ini merupakan petunjuk penting dalam mengurai soal ini.
 - Langkah kedua, kami akan mencari paket dengan urutan "7812". Dalam paket tersebut, kami dapat mengidentifikasi alamat IP sumber, yaitu 104.18.13.101. Gambar berikut ini memperlihatkan detail paket tersebut:
   
-  ![Screenshot (73)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/12c0b4e0-3434-4611-a777-2cbaea79fe92)
+  ![Screenshot (80)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/aa034e51-022a-42fd-a085-2e1f440374be)
 - Dari informasi yang telah kami peroleh, alamat IP sumber adalah 104.18.13.101. Jika kita menghubungkan hal ini dengan operasi substitusi yang kami sebutkan sebelumnya, maka angka-angka dalam alamat sumber tersebut akan menghasilkan kata berikut: 10 4 18 13 10 1, yang dapat diartikan sebagai J D R N J A (10 adalah urutan untuk huruf J, 4 adalah urutan untuk huruf D, 18 adalah urutan untuk huruf R, 13 adalah urutan untuk huruf N, 1 adalah urutan untuk huruf A).
   
-![Screenshot (74)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/73899346-f7fa-4a87-9f9f-2a80eec047f1)
+<img width="860" alt="Screenshot 2023-09-22 211056" src="https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/85f2451c-b164-498a-a45f-01a159ce13da">
 
 ## Soal Nomor 7
 Berapa jumlah packet yang menuju IP 184.87.193.88?
@@ -118,7 +118,7 @@ Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yan
 - udp.dstport == 80: Bagian kedua dari ekspresi ini mengacu pada protokol UDP dan nomor port tujuan yang sama dengan 80.
 
 ### Screenshot Pengumpulan Nomor 8
-![image 1](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/3b49729d-ca63-49e4-9605-4c0b8e0d1458)
+<img width="853" alt="Screenshot 2023-09-22 210632" src="https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/bb953944-be72-4787-b1b2-f3369596a84d">
 
 ## Soal Nomor 9
 Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
@@ -130,7 +130,7 @@ Ekspresi `ip.src == 10.51.40.1 && ip.dst != 10.39.55.34` dapat diuraikan sebagai
 - `ip.dst != 10.39.55.34`: Bagian kedua dari ekspresi ini merujuk pada alamat IP tujuan (destination IP address). Namun, dalam konteks ini, operator != digunakan, yang berarti "tidak sama dengan." Dengan kata lain, ekspresi ini akan memilih paket-paket yang memiliki alamat IP tujuan yang bukan 10.39.55.34. Jadi, ini akan mengkecualikan paket-paket yang menuju ke alamat tersebut dari seleksi.
 
 ### Screenshot Pengumpulan Nomor 9
-![image 1](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/3b49729d-ca63-49e4-9605-4c0b8e0d1458)
+<img width="851" alt="Screenshot 2023-09-22 210621" src="https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/3ec8bfc1-ec15-4812-a98a-9d52dcd0108e">
 
 ## Soal Nomor 10
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
@@ -141,17 +141,17 @@ Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 ### Screenshot Pengerjaan Nomor 10
 - Saat ini, langkah awal kami dalam proses penyaringan adalah mencari kata kunci telnet pada filter tampilan (display filter), yang akan menghasilkan tampilan seperti yang ditunjukkan pada gambar berikut:
   
-  ![Screenshot (69)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/0a04b314-ab97-41da-9c31-1308ba59a983)
+  ![Screenshot (76)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/5ad664bd-30a3-4398-83fd-9e0ca719358e)
 
 - Kemudian, kami melakukan penyortiran pada setiap paket satu per satu untuk mengidentifikasi username dan passwordnya. Kami fokus pada bagian dropdown yang berkaitan dengan telnet, seperti yang terlihat dalam gambar berikut:
   
-  ![Screenshot (69)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/9ca28711-7a8a-4df2-99ec-342da610d088)
+   ![10 2](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/221eebbb-038f-4cc5-89a8-61942ee020c3)
 
 - Selanjutnya, kami berhasil menemukan username dan password yang relevan, seperti yang terlihat di bawah ini:
   
-  ![Screenshot (67)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/0abf25a4-b4a9-4775-81f4-164a570b8a8f)
+  ![Screenshot (79)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/eb6ac243-e307-452d-9cbe-0fa8dbdf6b98)
 
-![image 221](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/55c81b73-d622-4fe9-8219-47b99ebc2018)
+<img width="853" alt="Screenshot 2023-09-22 210610" src="https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/78be741d-e100-4e61-8830-47ddd28ec304">
 
 ## Kendala
 - Pada saat praktikum berlangsung, kami menghadapi kesulitan dalam menyelesaikan nomor 6. Namun, kami berhasil menyelesaikannya dengan sukses saat sesi revisi berlangsung.

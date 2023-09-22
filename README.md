@@ -90,6 +90,7 @@ Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggema
 ### Screenshot Pengerjaan Nomor 6
 - Langkah pertama dalam proses ini adalah melakukan analisis awal pada soal. Perhatikan bahwa ada penggunaan huruf besar "S," "U," "B," "S," "T," "I," "T," "U," "S," "I," yang mengindikasikan bahwa kami akan melakukan operasi penggantian huruf. Penting untuk dicatat bahwa kita memiliki petunjuk a1, e5, dan u21. Dalam konteks ini, "a" mewakili huruf pertama, "e" adalah huruf kelima, dan "u" adalah huruf ke-21. Semua ini merupakan petunjuk penting dalam mengurai soal ini.
 - Langkah kedua, kami akan mencari paket dengan urutan "7812". Dalam paket tersebut, kami dapat mengidentifikasi alamat IP sumber, yaitu 104.18.13.101. Gambar berikut ini memperlihatkan detail paket tersebut:
+  
   ![Screenshot (73)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/12c0b4e0-3434-4611-a777-2cbaea79fe92)
 - Dari informasi yang telah kami peroleh, alamat IP sumber adalah 104.18.13.101. Jika kita menghubungkan hal ini dengan operasi substitusi yang kami sebutkan sebelumnya, maka angka-angka dalam alamat sumber tersebut akan menghasilkan kata berikut: 10 4 18 13 10 1, yang dapat diartikan sebagai J D R N J A (10 adalah urutan untuk huruf J, 4 adalah urutan untuk huruf D, 18 adalah urutan untuk huruf R, 13 adalah urutan untuk huruf N, 1 adalah urutan untuk huruf A).
   
@@ -103,6 +104,7 @@ Berapa jumlah packet yang menuju IP 184.87.193.88?
 
 ### Screenshot Pengerjaan Nomor 7
 - Untuk mencari jumlah paket yang menuju IP 184.87.193.88 adalah dengan melakukan pencarian dengan filter `ip.dst == 184.87.193.88` yang akan hanya menangkap paket dengan destination IP 184.87.193.88.
+- 
 ![1](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no7/Screenshot%20(68).png?raw=true)
 ![2](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no7/Screenshot%202023-09-18%20213006.png?raw=true)
 
@@ -138,12 +140,15 @@ Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 
 ### Screenshot Pengerjaan Nomor 10
 - Saat ini, langkah awal kami dalam proses penyaringan adalah mencari kata kunci telnet pada filter tampilan (display filter), yang akan menghasilkan tampilan seperti yang ditunjukkan pada gambar berikut:
-  ![Screenshot (69)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/0a04b314-ab97-41da-9c31-1308ba59a983)i 
+  
+  ![Screenshot (69)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/0a04b314-ab97-41da-9c31-1308ba59a983)
 
 - Kemudian, kami melakukan penyortiran pada setiap paket satu per satu untuk mengidentifikasi username dan passwordnya. Kami fokus pada bagian dropdown yang berkaitan dengan telnet, seperti yang terlihat dalam gambar berikut:
+  
   ![Screenshot (69)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/9ca28711-7a8a-4df2-99ec-342da610d088)
 
 - Selanjutnya, kami berhasil menemukan username dan password yang relevan, seperti yang terlihat di bawah ini:
+  
   ![Screenshot (67)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/0abf25a4-b4a9-4775-81f4-164a570b8a8f)
 
 ![image 221](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/55c81b73-d622-4fe9-8219-47b99ebc2018)

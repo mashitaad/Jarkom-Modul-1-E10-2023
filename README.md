@@ -8,10 +8,10 @@
 
 ## Soal Nomor 1
 > User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
-  a. Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas 	tersebut? 
-	b. Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas t	ersebut? 
-	c. Berapakah sequence number (raw) pada packet yang menunjukkan response dari 	aktivitas tersebut?
-	d. Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari 	aktivitas tersebut?
+> a. Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut?
+> b. Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut?
+> c. Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+> d. Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 
 ## Jawaban Nomor 1
 

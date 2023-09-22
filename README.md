@@ -102,8 +102,15 @@ Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 `dhafin:kesayangannyak0k0`
 
 ### Screenshot Pengerjaan Nomor 10
-- Langkah awal kami dalam proses penyaringan adalah dengan memasukkan kata kunci `telnet`. Setelah itu, kami mengklik setiap baris secara berurutan dan mengakses `TCP Stream` untuk menggali lebih dalam. Melalui langkah-langkah ini, kami dapat menemukan dan memahami dengan lebih detail username dan password yang tertera.
-![image 1](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/967bf66f-ba44-4bc1-8f1d-692d890b817f)
+- Langkah awal kami dalam proses penyaringan adalah mencari `telnet` di display filter, lalu akan muncul seperti berikut:
+  ![Screenshot (69)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/0a04b314-ab97-41da-9c31-1308ba59a983)
+
+- Lalu kami lakukan sortir disetiap bloknya satu persatu untuk melihat username dan passwordnya, jadi kami fokus di bagian dropdown `telnet` ini 
+  ![Screenshot (69)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/9ca28711-7a8a-4df2-99ec-342da610d088)
+
+- Lalu kami menemukan username dan passwordnya seperti dibawah ini:
+  ![Screenshot (67)](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/0abf25a4-b4a9-4775-81f4-164a570b8a8f)
+
 ![image 221](https://github.com/mashitaad/Jarkom-Modul-1-E10-2023/assets/87978863/55c81b73-d622-4fe9-8219-47b99ebc2018)
 
 ## Kendala

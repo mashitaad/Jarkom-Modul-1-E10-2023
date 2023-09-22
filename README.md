@@ -17,6 +17,12 @@ User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya
 `a : 258040667` `b : 1044861039` `c : 1044861039` `d : 258040696`
 
 ### Screenshot Pengerjaan Nomor 1
+- Langkah pertama dalam pengerjaan soal ini adalah melakukan sort pada packet-packet dalam wireshark sehingga yang memiliki protokol `FTP` akan lebih mudah untuk dicari.
+- Command mengunggah file pada `FTP` adalah `STOR` sehingga, packet yang memiliki kata STOR pada infonya akan dicari dan didapatkan pada packet ke-147. Lalu cari bagian Sequence Number (raw) dan Acknowledgement number (raw) pada bagian info Transmission Control Protocol.
+![1](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no1/Screenshot%20(70).png?raw=true)
+- Untuk packet yang menunjukkan response terdapat pada packet ke-149 dan untuk mendapatkan Sequence Number (raw) dan Acknowledgement number (raw) dari packet ini dapat dilakukan seperti langkah diatas.
+![2](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no1/Screenshot%20(71).png?raw=true)
+![3](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no1/Screenshot%202023-09-18%20213233.png?raw=true)
 
 ## Soal Nomor 2
 Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
@@ -25,6 +31,9 @@ Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 `gunicorn`
 
 ### Screenshot Pengerjaan Nomor 2
+- Langkah pengerjaan soal ini adalah dengan mencari packet yang memiliki IP source atau IP destination `10.21.78.111`. Lalu lakukan Follow TCP Stream pada salah satu packet yang ditemukan. Nantinya akan ada bagian yang menyebutkan nama server.
+![1](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no2/Screenshot%20(65).png?raw=true)
+![2](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no2/Screenshot%202023-09-18%20212751.png?raw=true)
 
 ## Soal Nomor 3
 Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
@@ -35,6 +44,11 @@ Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal be
 `a : 21` `b : UDP`
 
 ### Screenshot Pengerjaan Nomor 3
+- Untuk menemukan banyaknya paket yang tercapture dengan IP source dan destination address 239.255.255.250 dengan port 3702 adalah dengan melakukan filter dengan query sebagai berikut : `(ip.src == 239.255.255.250 && udp.port == 3702) || (ip.dst == 239.255.255.250 && udp.port == 3702)`. Bagian `ip.src` akan melakukan pencarian pada paket yang memiliki source IP 239.255.255.250, pada bagian `ip.dst` akan melakukan pencarian pada paket yang destination IP nya adalah 239.255.255.250, dan bagian `udp.port` melakukan pencarian paket yang memiliki port 3702. Setelah melakukan filter hitung banyaknya paket yang masih tersisa setelah dilakukannya filter.
+![1](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no3/Screenshot%20(66).png?raw=true)
+- Untuk mencari protokol layer transport yang digunakan dapat dilihat pada info Internet Protocol Version dan terdapat pada bagian protocol.
+![2](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no3/Screenshot%20(67).png?raw=true)
+![3](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no3/Screenshot%202023-09-18%20212905.png?raw=true)
 
 ## Soal Nomor 4
 Berapa nilai checksum yang didapat dari header pada paket nomor 130?
@@ -43,6 +57,9 @@ Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 `0x18e5`
 
 ### Screenshot Pengerjaan Nomor 4
+- Untuk menemukan nilai checkcum pada paket no 130 adalah dengan mencari pada bagian info User Datagram Protocol, nanti akan ada bagian yang bernama checksum dan nilai checksum-nya akan berbentuk heksadesimal.
+![1](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no4/Screenshot%20(69).png?raw=true)
+![2](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no4/Screenshot%202023-09-18%20213129.png?raw=true)
 
 ## Soal Nomor 5
 Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
@@ -54,6 +71,17 @@ Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk men
 `a : 60` `b : 25` `c : 74.53.140.153`
 
 ### Screenshot Pengerjaan Nomor 5
+- Langkah pertama untuk mengerjakan soal no 5 adalah dengan mencari password untuk membuka file connect agar kita bisa mengumpulkan jawaban untuk no 5. Password untuk file connect akan ditemukan pada paket yang memiliki Follow TCP Stream tetapi file harus didecode menggunakan Base64. Bentuk awal password adalah seperti berikut `NWltcGxlUGFzNXdvcmQ=`.
+![1](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no5/Screenshot%20(72).png?raw=true)
+Untuk melakukan decode, masukkan command seperti berikut kedalam bash linux : `echo 'NWltcGxlUGFzNXdvcmQ=' | base64 --decode`. Setelah dijalankan, password nantinya akan menjadi `5implePas5word`.
+- Banyak paket yang berhasil dicapture dari file pcap tersebut dapat dihitung dari total paket yang terdapat dalam file.
+![2](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no5/Screenshot%20(74).png?raw=true)
+- Untuk menemukan port pada server yang digunakan untuk service SMTP dapat dilihat pada salah satu paket yang memiliki protokol SMTP, lalu lihat pada bagian info Transmission Control Protocol dan akan ada bagian source port.
+![3](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no5/Screenshot%20(73).png?raw=true)
+- Untuk menemukan IP yang merupakan public IP dapat diseleksi masing-masing ip yang tercapture pada file. IP yang merupakan public IP adalah `74.53.140.153` karena `74.53.140.153` tidak termasuk dalam range IP private.
+![4](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no5/Screenshot%202023-09-18%20213433.png?raw=true)
+
+ 
 
 ## Soal Nomor 6
 Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
@@ -76,6 +104,9 @@ Berapa jumlah packet yang menuju IP 184.87.193.88?
 `6`
 
 ### Screenshot Pengerjaan Nomor 7
+- Untuk mencari jumlah paket yang menuju IP 184.87.193.88 adalah dengan melakukan pencarian dengan filter `ip.dst == 184.87.193.88` yang akan hanya menangkap paket dengan destination IP 184.87.193.88.
+![1](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no7/Screenshot%20(68).png?raw=true)
+![2](https://github.com/mavaldi/Image-Jarkom/blob/main/Praktikum%201/no7/Screenshot%202023-09-18%20213006.png?raw=true)
 
 ## Soal Nomor 8
 Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
